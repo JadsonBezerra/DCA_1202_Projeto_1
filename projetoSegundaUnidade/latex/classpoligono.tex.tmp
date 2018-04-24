@@ -1,0 +1,179 @@
+\hypertarget{classpoligono}{}\section{poligono Class Reference}
+\label{classpoligono}\index{poligono@{poligono}}
+
+
+A classe de poligono serve para armazenar poligonos e realizar operações com eles.  
+
+
+
+
+{\ttfamily \#include $<$poligono.\+h$>$}
+
+
+
+Inheritance diagram for poligono\+:
+% FIG 0
+
+
+Collaboration diagram for poligono\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpoligono_aac1fd52feed0493c9da98f101d3c670d}{poligono} ()
+\begin{DoxyCompactList}\small\item\em Poligono é o construtor da classe. \end{DoxyCompactList}\item 
+void \hyperlink{classpoligono_afb9e9ff490ef3aa44da636ebbf9c3777}{set\+Ver} (\hyperlink{classponto}{ponto} a)
+\begin{DoxyCompactList}\small\item\em O método set\+Ver adiciona um vértice ao poligono. \end{DoxyCompactList}\item 
+void \hyperlink{classpoligono_a9bbf06e0b6f91dc62ed2a14f34e5ee10}{set\+Ver} (float \+\_\+x, float \+\_\+y)
+\begin{DoxyCompactList}\small\item\em O método set\+Ver adiciona um vértice ao poligono. \end{DoxyCompactList}\item 
+int \hyperlink{classpoligono_a2b33bbdd5a38685cbbb66a64b5a568ef}{get\+Qtd\+Ver} ()
+\begin{DoxyCompactList}\small\item\em O método get\+Qtd\+Ver retorna a quantidade de vértices do poligono. \end{DoxyCompactList}\item 
+float \hyperlink{classpoligono_a6f71f348af871870f02fcc15e506c240}{area} ()
+\begin{DoxyCompactList}\small\item\em O método area retorna a área do polígono. \end{DoxyCompactList}\item 
+void \hyperlink{classpoligono_a3e2004699be39dacd4dfdab1c25375b9}{translada} (float a, float b)
+\begin{DoxyCompactList}\small\item\em O método translada desloca o polígono. \end{DoxyCompactList}\item 
+void \hyperlink{classpoligono_a163c849460f49ac5193dfcf5f24b3f4c}{imprimir} ()
+\begin{DoxyCompactList}\small\item\em O método imprimir imprime os pontos do poligono. \end{DoxyCompactList}\item 
+void \hyperlink{classpoligono_a7e186a463ec6b45e98a6b4dd20b69691}{rotacionar} (float theta, \hyperlink{classponto}{ponto} p)
+\begin{DoxyCompactList}\small\item\em O método rotacionar rotaciona o polígono em relação a um ponto, no sentido anti-\/horário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classponto}{ponto} $\ast$ {\bfseries vertices}\hypertarget{classpoligono_a82a09219a7da9f49ecf9e8bbe1cf28aa}{}\label{classpoligono_a82a09219a7da9f49ecf9e8bbe1cf28aa}
+
+\item 
+int {\bfseries Qtde\+Vertices}\hypertarget{classpoligono_a9885ca722e83b138e8ac8603b06a49ae}{}\label{classpoligono_a9885ca722e83b138e8ac8603b06a49ae}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A classe de poligono serve para armazenar poligonos e realizar operações com eles. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{poligono@{poligono}!poligono@{poligono}}
+\index{poligono@{poligono}!poligono@{poligono}}
+\subsubsection[{\texorpdfstring{poligono()}{poligono()}}]{\setlength{\rightskip}{0pt plus 5cm}poligono\+::poligono (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpoligono_aac1fd52feed0493c9da98f101d3c670d}{}\label{classpoligono_aac1fd52feed0493c9da98f101d3c670d}
+
+
+Poligono é o construtor da classe. 
+
+Ele inicia o nº de vertices igual a zero e aloca um 
+
+\subsection{Member Function Documentation}
+\index{poligono@{poligono}!area@{area}}
+\index{area@{area}!poligono@{poligono}}
+\subsubsection[{\texorpdfstring{area()}{area()}}]{\setlength{\rightskip}{0pt plus 5cm}float poligono\+::area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpoligono_a6f71f348af871870f02fcc15e506c240}{}\label{classpoligono_a6f71f348af871870f02fcc15e506c240}
+
+
+O método area retorna a área do polígono. 
+
+O método calcula e retorna a área do polígono armazenado. Escrevendo os vértices do polígono como um determinante, repetindo o primeiro ponto no fim,a área é dada pela soma das diagonais principais subtraida da soma das diagonais secundárias; dividido por 2. \index{poligono@{poligono}!get\+Qtd\+Ver@{get\+Qtd\+Ver}}
+\index{get\+Qtd\+Ver@{get\+Qtd\+Ver}!poligono@{poligono}}
+\subsubsection[{\texorpdfstring{get\+Qtd\+Ver()}{getQtdVer()}}]{\setlength{\rightskip}{0pt plus 5cm}int poligono\+::get\+Qtd\+Ver (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpoligono_a2b33bbdd5a38685cbbb66a64b5a568ef}{}\label{classpoligono_a2b33bbdd5a38685cbbb66a64b5a568ef}
+
+
+O método get\+Qtd\+Ver retorna a quantidade de vértices do poligono. 
+
+O método retorna a variável Qtde\+Vertices , que é a quantidade de vertices do poligono \index{poligono@{poligono}!imprimir@{imprimir}}
+\index{imprimir@{imprimir}!poligono@{poligono}}
+\subsubsection[{\texorpdfstring{imprimir()}{imprimir()}}]{\setlength{\rightskip}{0pt plus 5cm}void poligono\+::imprimir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpoligono_a163c849460f49ac5193dfcf5f24b3f4c}{}\label{classpoligono_a163c849460f49ac5193dfcf5f24b3f4c}
+
+
+O método imprimir imprime os pontos do poligono. 
+
+O método imprime os pontos na ordem em que eles foram inseridos \index{poligono@{poligono}!rotacionar@{rotacionar}}
+\index{rotacionar@{rotacionar}!poligono@{poligono}}
+\subsubsection[{\texorpdfstring{rotacionar(float theta, ponto p)}{rotacionar(float theta, ponto p)}}]{\setlength{\rightskip}{0pt plus 5cm}void poligono\+::rotacionar (
+\begin{DoxyParamCaption}
+\item[{float}]{theta, }
+\item[{{\bf ponto}}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{classpoligono_a7e186a463ec6b45e98a6b4dd20b69691}{}\label{classpoligono_a7e186a463ec6b45e98a6b4dd20b69691}
+
+
+O método rotacionar rotaciona o polígono em relação a um ponto, no sentido anti-\/horário. 
+
+O método desloca o ponto de referência até a origem e então realiza a rotação do poligono no sentido anti horário 
+\begin{DoxyParams}{Parameters}
+{\em theta} & é o ângulo que o polígonno deve ser rotacionado,em sentido anti-\/horario \\
+\hline
+{\em p} & é o ponto de referência ao redor do qual o polígono deve ser rotacionado. \\
+\hline
+\end{DoxyParams}
+\index{poligono@{poligono}!set\+Ver@{set\+Ver}}
+\index{set\+Ver@{set\+Ver}!poligono@{poligono}}
+\subsubsection[{\texorpdfstring{set\+Ver(ponto a)}{setVer(ponto a)}}]{\setlength{\rightskip}{0pt plus 5cm}void poligono\+::set\+Ver (
+\begin{DoxyParamCaption}
+\item[{{\bf ponto}}]{a}
+\end{DoxyParamCaption}
+)}\hypertarget{classpoligono_afb9e9ff490ef3aa44da636ebbf9c3777}{}\label{classpoligono_afb9e9ff490ef3aa44da636ebbf9c3777}
+
+
+O método set\+Ver adiciona um vértice ao poligono. 
+
+O método realoca o tamanho do ponteiro, incrementa a variavel Qtde\+Vertices e adiciona o ponto a ao array de vertices 
+\begin{DoxyParams}{Parameters}
+{\em a} & é o ponto a ser adicionado \\
+\hline
+\end{DoxyParams}
+\index{poligono@{poligono}!set\+Ver@{set\+Ver}}
+\index{set\+Ver@{set\+Ver}!poligono@{poligono}}
+\subsubsection[{\texorpdfstring{set\+Ver(float \+\_\+x, float \+\_\+y)}{setVer(float _x, float _y)}}]{\setlength{\rightskip}{0pt plus 5cm}void poligono\+::set\+Ver (
+\begin{DoxyParamCaption}
+\item[{float}]{\+\_\+x, }
+\item[{float}]{\+\_\+y}
+\end{DoxyParamCaption}
+)}\hypertarget{classpoligono_a9bbf06e0b6f91dc62ed2a14f34e5ee10}{}\label{classpoligono_a9bbf06e0b6f91dc62ed2a14f34e5ee10}
+
+
+O método set\+Ver adiciona um vértice ao poligono. 
+
+O método realoca o tamanho do ponteiro, incrementa a variavel Qtde\+Vertices e adiciona o ponto a ao array de vertices 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & é a cordenada x do ponto a ser adicionado \\
+\hline
+{\em \+\_\+y} & é a cordenada y do ponto a ser adicionado \\
+\hline
+\end{DoxyParams}
+\index{poligono@{poligono}!translada@{translada}}
+\index{translada@{translada}!poligono@{poligono}}
+\subsubsection[{\texorpdfstring{translada(float a, float b)}{translada(float a, float b)}}]{\setlength{\rightskip}{0pt plus 5cm}void poligono\+::translada (
+\begin{DoxyParamCaption}
+\item[{float}]{a, }
+\item[{float}]{b}
+\end{DoxyParamCaption}
+)}\hypertarget{classpoligono_a3e2004699be39dacd4dfdab1c25375b9}{}\label{classpoligono_a3e2004699be39dacd4dfdab1c25375b9}
+
+
+O método translada desloca o polígono. 
+
+O método desloca o polígono do seu ponto de origem 
+\begin{DoxyParams}{Parameters}
+{\em a} & é o quanto o polígnno é transladado em relaçãoao eixo y \\
+\hline
+{\em b} & é o quanto o polígnno é transladado em relaçãoao eixo x \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+poligono.\+h\item 
+poligono.\+cpp\end{DoxyCompactItemize}
