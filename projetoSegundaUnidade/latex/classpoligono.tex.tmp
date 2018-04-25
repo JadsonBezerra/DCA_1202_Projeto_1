@@ -130,7 +130,9 @@ O método desloca o ponto de referência até a origem e então realiza a rotaç
 \begin{DoxyParams}{Parameters}
 {\em theta} & é o ângulo que o polígonno deve ser rotacionado,em sentido anti-\/horario \\
 \hline
-{\em p} & é o ponto de referência ao redor do qual o polígono deve ser rotacionado. \\
+{\em b} & é a coordenada x do ponto o qual o poligono deve ser rotacionado ao redor. \\
+\hline
+{\em c} & é a coordenada y do ponto o qual o poligono deve ser rotacionado ao redor. \\
 \hline
 \end{DoxyParams}
 \index{poligono@{poligono}!rotacionar@{rotacionar}}
@@ -149,9 +151,7 @@ O método desloca o ponto de referência até a origem e então realiza a rotaç
 \begin{DoxyParams}{Parameters}
 {\em theta} & é o ângulo que o polígonno deve ser rotacionado,em sentido anti-\/horario \\
 \hline
-{\em b} & é a coordenada x do ponto o qual o poligono deve ser rotacionado ao redor. \\
-\hline
-{\em c} & é a coordenada y do ponto o qual o poligono deve ser rotacionado ao redor. \\
+{\em p} & é o ponto de referência ao redor do qual o polígono deve ser rotacionado. \\
 \hline
 \end{DoxyParams}
 \index{poligono@{poligono}!set\+Ver@{set\+Ver}}

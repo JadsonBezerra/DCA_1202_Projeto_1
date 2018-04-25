@@ -85,11 +85,11 @@ void poligono::rotacionar(float theta, float b ,float c)
     }
 }
 
-void poligono::rotacionar(float theta, float b, float c)
+void poligono::rotacionar(float theta, ponto p)
 {
     theta*=(M_PI/180.0);
     for(int j=0; j<QtdeVertices ; j++){
-        vertices[j].translada(-b.getX(),-b.getY());
+        vertices[j].translada(-p.getX(),-p.getY());
     }
 
     for(int j=0; j<QtdeVertices ; j++){
@@ -97,6 +97,6 @@ void poligono::rotacionar(float theta, float b, float c)
     }
 
     for(int j=0; j<QtdeVertices ; j++){
-        vertices[j].translada(b.getX(),b.getY());
+        vertices[j].translada(p.getX(),p.getY());
     }
 }

@@ -25,7 +25,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Projeto da Segunda Unidade
    </div>
-   <div id="projectbrief">Esta é a documenação para o projeto da segunda unidade da disciplina DCA1202 etrata com pontos e poligonos</div>
+   <div id="projectbrief">Esta é a documenação para o projeto da segunda unidade da disciplina DCA1202 e trata com pontos e poligonos</div>
   </td>
  </tr>
  </tbody>
@@ -39,7 +39,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -61,10 +61,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
       <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -85,8 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="classpoligono-members.html">List of all members</a>  </div>
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">poligono Class Reference</div>  </div>
 </div><!--header-->
@@ -281,7 +280,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>QtdeVertices</b></td><
 <p>O método desloca o ponto de referência até a origem e então realiza a rotação do poligono no sentido anti horário </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">theta</td><td>é o ângulo que o polígonno deve ser rotacionado,em sentido anti-horario </td></tr>
-    <tr><td class="paramname">p</td><td>é o ponto de referência ao redor do qual o polígono deve ser rotacionado. </td></tr>
+    <tr><td class="paramname">b</td><td>é a coordenada x do ponto o qual o poligono deve ser rotacionado ao redor. </td></tr>
+    <tr><td class="paramname">c</td><td>é a coordenada y do ponto o qual o poligono deve ser rotacionado ao redor. </td></tr>
   </table>
   </dd>
 </dl>
@@ -316,8 +316,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>QtdeVertices</b></td><
 <p>O método desloca o ponto de referência até a origem e então realiza a rotação do poligono no sentido anti horário </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">theta</td><td>é o ângulo que o polígonno deve ser rotacionado,em sentido anti-horario </td></tr>
-    <tr><td class="paramname">b</td><td>é a coordenada x do ponto o qual o poligono deve ser rotacionado ao redor. </td></tr>
-    <tr><td class="paramname">c</td><td>é a coordenada y do ponto o qual o poligono deve ser rotacionado ao redor. </td></tr>
+    <tr><td class="paramname">p</td><td>é o ponto de referência ao redor do qual o polígono deve ser rotacionado. </td></tr>
   </table>
   </dd>
 </dl>
