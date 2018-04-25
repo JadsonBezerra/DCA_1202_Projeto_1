@@ -5,12 +5,14 @@
 
 poligono::poligono(){// constrtor default
     QtdeVertices=0;
-    vertices=  new float;
+    vertices=  new ponto;
 }
 
 poligono::~poligono()
 {
-    delete vertices;
+
+        delete [] vertices;
+
 }
 
 void poligono::setVer(ponto a){
@@ -19,7 +21,7 @@ void poligono::setVer(ponto a){
         exit(0);
     }
     QtdeVertices++;
-    vertices=realloc(vertices,QtdeVertices);
+    vertices=(ponto*)realloc(vertices,QtdeVertices);
     vertices[QtdeVertices-1]=a;
 }
 
@@ -30,7 +32,7 @@ void poligono::setVer(float _x, float _y)
         exit(0);
     }
     QtdeVertices++;
-    vertices=realloc(vertices,QtdeVertices);
+    vertices=(ponto*)realloc(vertices,QtdeVertices);
     vertices[QtdeVertices-1].setX(_x);
     vertices[QtdeVertices-1].setY(_y);
 }

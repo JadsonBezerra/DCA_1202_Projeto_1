@@ -1,49 +1,28 @@
 #include <iostream>
 #include "ponto.h"
 #include "poligono.h"
+#include"retangulo.h"
 
 using namespace std;
-
-/*namespace seila {
-    void imprime(){
-        std::cout<<endl<<"OI MUNDO";
-    }
-    namespace batata {
-        void imprime(){
-            std::cout<<endl<<"Que loco"<<endl;
-        }
-    }
-}
-*/
 
 int main()
 {
 
-    ponto v1(1,1),v2,v3,v4;
+    retangulo ret1(0,0,3,4);
 
-    v2.setX(-1);
-    v2.setY(1);
+    ret1.imprimir();
 
+    cout<<endl<<ret1.area();
 
-    v3.setX(-1);
-    v3.setY(-1);
+    ret1.translada(-3,4);
 
-    v4.setX(1);
-    v4.setY(-1);
-//    v1.imprime();
+    cout<<endl<<ret1.area();
 
-    poligono  quadrado;
+    ponto CM(-1,5.5);
 
-    quadrado.setV(v1);
-    quadrado.setV(v2);
-    quadrado.setV(v3);
-    quadrado.setV(v4);
+    ret1.rotacionar(30,CM);
 
-    quadrado.imprimir();
-    std::cout<<endl;
-    std::cout<<quadrado.area();
-
-//    seila::batata::imprime();
+    cout<<endl<<ret1.area();
 
     return 0;
 }

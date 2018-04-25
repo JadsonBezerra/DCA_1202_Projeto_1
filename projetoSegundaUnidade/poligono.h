@@ -21,6 +21,10 @@ class poligono
           * inicia o nº de vertices igual a zero e aloca um
           */
         poligono();
+        /**
+          * @brief ~poligono é o destrutor da classe.
+          * @details Ele libera a memoria alocada
+          */
         ~poligono();
         /**
           * @brief O  método setVer adiciona um vértice ao poligono
