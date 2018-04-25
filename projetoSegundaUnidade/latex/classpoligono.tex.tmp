@@ -22,6 +22,8 @@ Collaboration diagram for poligono\+:
 \item 
 \hyperlink{classpoligono_aac1fd52feed0493c9da98f101d3c670d}{poligono} ()
 \begin{DoxyCompactList}\small\item\em Poligono é o construtor da classe. \end{DoxyCompactList}\item 
+\hyperlink{classpoligono_acc2865c8fc790b5d4bed1560fe136bde}{$\sim$poligono} ()
+\begin{DoxyCompactList}\small\item\em $\sim$poligono é o destrutor da classe. \end{DoxyCompactList}\item 
 void \hyperlink{classpoligono_afb9e9ff490ef3aa44da636ebbf9c3777}{set\+Ver} (\hyperlink{classponto}{ponto} a)
 \begin{DoxyCompactList}\small\item\em O método set\+Ver adiciona um vértice ao poligono. \end{DoxyCompactList}\item 
 void \hyperlink{classpoligono_a9bbf06e0b6f91dc62ed2a14f34e5ee10}{set\+Ver} (float \+\_\+x, float \+\_\+y)
@@ -34,6 +36,8 @@ void \hyperlink{classpoligono_a3e2004699be39dacd4dfdab1c25375b9}{translada} (flo
 \begin{DoxyCompactList}\small\item\em O método translada desloca o polígono. \end{DoxyCompactList}\item 
 void \hyperlink{classpoligono_a163c849460f49ac5193dfcf5f24b3f4c}{imprimir} ()
 \begin{DoxyCompactList}\small\item\em O método imprimir imprime os pontos do poligono. \end{DoxyCompactList}\item 
+void \hyperlink{classpoligono_aa08efec9696dfd37f475586a06cb84ba}{rotacionar} (float theta, float b, float c)
+\begin{DoxyCompactList}\small\item\em O método rotacionar rotaciona o polígono em relação a um ponto, no sentido anti-\/horário. \end{DoxyCompactList}\item 
 void \hyperlink{classpoligono_a7e186a463ec6b45e98a6b4dd20b69691}{rotacionar} (float theta, \hyperlink{classponto}{ponto} p)
 \begin{DoxyCompactList}\small\item\em O método rotacionar rotaciona o polígono em relação a um ponto, no sentido anti-\/horário. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
@@ -62,7 +66,18 @@ A classe de poligono serve para armazenar poligonos e realizar operações com e
 
 Poligono é o construtor da classe. 
 
-Ele inicia o nº de vertices igual a zero e aloca um 
+Ele inicia o nº de vertices igual a zero e aloca um \index{poligono@{poligono}!````~poligono@{$\sim$poligono}}
+\index{````~poligono@{$\sim$poligono}!poligono@{poligono}}
+\subsubsection[{\texorpdfstring{$\sim$poligono()}{~poligono()}}]{\setlength{\rightskip}{0pt plus 5cm}poligono\+::$\sim$poligono (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classpoligono_acc2865c8fc790b5d4bed1560fe136bde}{}\label{classpoligono_acc2865c8fc790b5d4bed1560fe136bde}
+
+
+$\sim$poligono é o destrutor da classe. 
+
+Ele libera a memoria alocada 
 
 \subsection{Member Function Documentation}
 \index{poligono@{poligono}!area@{area}}
@@ -100,6 +115,26 @@ O método imprimir imprime os pontos do poligono.
 
 O método imprime os pontos na ordem em que eles foram inseridos \index{poligono@{poligono}!rotacionar@{rotacionar}}
 \index{rotacionar@{rotacionar}!poligono@{poligono}}
+\subsubsection[{\texorpdfstring{rotacionar(float theta, float b, float c)}{rotacionar(float theta, float b, float c)}}]{\setlength{\rightskip}{0pt plus 5cm}void poligono\+::rotacionar (
+\begin{DoxyParamCaption}
+\item[{float}]{theta, }
+\item[{float}]{b, }
+\item[{float}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{classpoligono_aa08efec9696dfd37f475586a06cb84ba}{}\label{classpoligono_aa08efec9696dfd37f475586a06cb84ba}
+
+
+O método rotacionar rotaciona o polígono em relação a um ponto, no sentido anti-\/horário. 
+
+O método desloca o ponto de referência até a origem e então realiza a rotação do poligono no sentido anti horário 
+\begin{DoxyParams}{Parameters}
+{\em theta} & é o ângulo que o polígonno deve ser rotacionado,em sentido anti-\/horario \\
+\hline
+{\em p} & é o ponto de referência ao redor do qual o polígono deve ser rotacionado. \\
+\hline
+\end{DoxyParams}
+\index{poligono@{poligono}!rotacionar@{rotacionar}}
+\index{rotacionar@{rotacionar}!poligono@{poligono}}
 \subsubsection[{\texorpdfstring{rotacionar(float theta, ponto p)}{rotacionar(float theta, ponto p)}}]{\setlength{\rightskip}{0pt plus 5cm}void poligono\+::rotacionar (
 \begin{DoxyParamCaption}
 \item[{float}]{theta, }
@@ -114,7 +149,9 @@ O método desloca o ponto de referência até a origem e então realiza a rotaç
 \begin{DoxyParams}{Parameters}
 {\em theta} & é o ângulo que o polígonno deve ser rotacionado,em sentido anti-\/horario \\
 \hline
-{\em p} & é o ponto de referência ao redor do qual o polígono deve ser rotacionado. \\
+{\em b} & é a coordenada x do ponto o qual o poligono deve ser rotacionado ao redor. \\
+\hline
+{\em c} & é a coordenada y do ponto o qual o poligono deve ser rotacionado ao redor. \\
 \hline
 \end{DoxyParams}
 \index{poligono@{poligono}!set\+Ver@{set\+Ver}}

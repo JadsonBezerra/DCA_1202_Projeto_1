@@ -69,6 +69,14 @@ class poligono
           * @param theta é o ângulo que o polígonno deve ser rotacionado,em sentido anti-horario
           * @param p é o ponto de referência ao redor do qual o polígono deve ser rotacionado.
         */
+        void rotacionar(float theta,float b, float c);
+        /**
+          * @brief O método rotacionar rotaciona o polígono em relação a um ponto, no sentido anti-horário
+          * @details O método desloca o ponto de referência até a origem e então realiza a rotação do poligono no sentido anti horário
+          * @param theta é o ângulo que o polígonno deve ser rotacionado,em sentido anti-horario
+          * @param b é a coordenada x do ponto o qual o poligono deve ser rotacionado ao redor.
+          * @param c é a coordenada y do ponto o qual o poligono deve ser rotacionado ao redor.
+        */
         void rotacionar(float theta,ponto p);
 
 };

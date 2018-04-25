@@ -1,6 +1,11 @@
 #ifndef PONTO_H
 #define PONTO_H
 
+/**
+ * @brief A classe de ponto serve para
+ * armazenar pontos e realizar operações
+ * com eles.
+ */
 
 class ponto{
     protected:

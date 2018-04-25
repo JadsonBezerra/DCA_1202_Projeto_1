@@ -69,11 +69,34 @@ void poligono::imprimir(){
 }
 
 
-void poligono::rotacionar(float theta, ponto p)
+void poligono::rotacionar(float theta, float b ,float c)
 {
-    theta*=(M_PI/180);
-    for(int i=0;i<QtdeVertices;i++){
-        vertices[i].setX((vertices[i].getX()-p.getX())*std::cos(theta)-(vertices[i].getY()-p.getY())*std::sin(theta)+p.getX());
-        vertices[i].setY((vertices[i].getX()-p.getX())*std::sin(theta)+(vertices[i].getY()-p.getY())*std::cos(theta)+p.getY());
+    theta*=(M_PI/180.0);
+    for(int j=0; j<QtdeVertices ; j++){
+        vertices[j].translada(-b,-c);
+    }
+
+    for(int j=0; j<QtdeVertices ; j++){
+        vertices[j].setXY(vertices[j].getX()*cos(theta)-vertices[j].getY()*sin(theta),vertices[j].getX()*sin(theta)+vertices[j].getY()*cos(theta));
+    }
+
+    for(int j=0; j<QtdeVertices ; j++){
+        vertices[j].translada(b,c);
+    }
+}
+
+void poligono::rotacionar(float theta, float b, float c)
+{
+    theta*=(M_PI/180.0);
+    for(int j=0; j<QtdeVertices ; j++){
+        vertices[j].translada(-b.getX(),-b.getY());
+    }
+
+    for(int j=0; j<QtdeVertices ; j++){
+        vertices[j].setXY(vertices[j].getX()*cos(theta)-vertices[j].getY()*sin(theta),vertices[j].getX()*sin(theta)+vertices[j].getY()*cos(theta));
+    }
+
+    for(int j=0; j<QtdeVertices ; j++){
+        vertices[j].translada(b.getX(),b.getY());
     }
 }

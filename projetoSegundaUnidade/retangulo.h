@@ -3,6 +3,12 @@
 
 #include "poligono.h"
 
+/**
+ * @brief A classe de retngulo serve para
+ * armazenar retangulos e realizar operações
+ * com eles, uitlizando da herança da classe poligono.
+ */
+
 class retangulo : public poligono{
 protected:
 public:

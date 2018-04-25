@@ -2,6 +2,15 @@
 \label{classretangulo}\index{retangulo@{retangulo}}
 
 
+A classe de retngulo serve para armazenar retangulos e realizar operações com eles, uitlizando da herança da classe poligono.  
+
+
+
+
+{\ttfamily \#include $<$retangulo.\+h$>$}
+
+
+
 Inheritance diagram for retangulo\+:
 % FIG 0
 
@@ -15,10 +24,15 @@ Collaboration diagram for retangulo\+:
 \begin{DoxyCompactList}\small\item\em Retângulo é o construtor padrão da classe. \end{DoxyCompactList}\item 
 \hyperlink{classretangulo_a5fe1629422a5e7d01a5051835a712e10}{retangulo} (\hyperlink{classponto}{ponto} a, float altura, float largura)
 \begin{DoxyCompactList}\small\item\em Esse metodo é o construtor de classe. \end{DoxyCompactList}\item 
+\hyperlink{classretangulo_a8eb54a4aa37bc9f02e08bc62fd02bb52}{retangulo} (float x, float y, float altura, float largura)
+\begin{DoxyCompactList}\small\item\em Esse metodo é o construtor de classe. \end{DoxyCompactList}\item 
 \hyperlink{classretangulo_ac6983b03c4614484a72ac04c13d7f556}{$\sim$retangulo} ()
 \begin{DoxyCompactList}\small\item\em $\sim$\+Retângulo é o destrutor da classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+A classe de retngulo serve para armazenar retangulos e realizar operações com eles, uitlizando da herança da classe poligono. 
 
 \subsection{Constructor \& Destructor Documentation}
 \index{retangulo@{retangulo}!retangulo@{retangulo}}
@@ -54,6 +68,31 @@ Ele define o retangulo com vertice inicial no ponto a, com altura igual ao param
 {\em larguta} & é o valor da largura do retangulo. \\
 \hline
 \end{DoxyParams}
+\index{retangulo@{retangulo}!retangulo@{retangulo}}
+\index{retangulo@{retangulo}!retangulo@{retangulo}}
+\subsubsection[{\texorpdfstring{retangulo(float x, float y, float altura, float largura)}{retangulo(float x, float y, float altura, float largura)}}]{\setlength{\rightskip}{0pt plus 5cm}retangulo\+::retangulo (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{altura, }
+\item[{float}]{largura}
+\end{DoxyParamCaption}
+)}\hypertarget{classretangulo_a8eb54a4aa37bc9f02e08bc62fd02bb52}{}\label{classretangulo_a8eb54a4aa37bc9f02e08bc62fd02bb52}
+
+
+Esse metodo é o construtor de classe. 
+
+Ele define o retangulo com vertice inicial no ponto (x,y), com altura igual ao parametro altura e largura igual ao parametro largura. 
+\begin{DoxyParams}{Parameters}
+{\em x} & é a coordenada x do ponto incial do retagulo \\
+\hline
+{\em y} & é a coordenada y do ponto incial do retagulo \\
+\hline
+{\em altura} & é o valor da altura do retangulo \\
+\hline
+{\em larguta} & é o valor da largura do retangulo. \\
+\hline
+\end{DoxyParams}
 \index{retangulo@{retangulo}!````~retangulo@{$\sim$retangulo}}
 \index{````~retangulo@{$\sim$retangulo}!retangulo@{retangulo}}
 \subsubsection[{\texorpdfstring{$\sim$retangulo()}{~retangulo()}}]{\setlength{\rightskip}{0pt plus 5cm}retangulo\+::$\sim$retangulo (
@@ -65,7 +104,7 @@ Ele define o retangulo com vertice inicial no ponto a, com altura igual ao param
 
 $\sim$\+Retângulo é o destrutor da classe. 
 
-Ele libera a memoria 
+Ele libera a memoria alocada 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

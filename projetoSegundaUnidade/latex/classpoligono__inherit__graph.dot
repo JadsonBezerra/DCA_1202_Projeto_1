@@ -4,5 +4,5 @@ digraph "poligono"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node1 [label="poligono",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="retangulo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classretangulo.html"];
+  Node2 [label="retangulo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classretangulo.html",tooltip="A classe de retngulo serve para armazenar retangulos e realizar operações com eles, uitlizando da herança da classe poligono. "];
 }
